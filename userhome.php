@@ -1,3 +1,7 @@
+<?php
+include "connection.php";
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,24 +14,42 @@
 <body>
 
 <?php
-include "connection.php";
 //include "header.php";
 ?>
+
 <section class="probootstrap-section probootstrap-section-colored">
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+               
+               <?php
+               echo "Welcome to user panel.";
+                ?>
+
+            </div>
+        </div>
+    </div>
+<br>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-left section-heading probootstrap-animate">
-                <?php
-                echo "<h1 class='text-center text-capitalize'> Welcome to User Panel";
-                ?>
-                <a href="userchangepassword.php"><h5>Change Password</h5></a>
+                <a href="userchangepassword.php">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Change Password">
+                </a>
+                <a href="userlogout.php">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Logout">
+                </a>
             </div>
         </div>
     </div>
 </section>
-<br><br>
+
+<br>
 <?php
-// include "footer.php";
+// include "footer.php"; 
 ?>
 </body>
 </html>
+
+               

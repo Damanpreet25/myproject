@@ -51,7 +51,8 @@
                        }
                    }
                     ?>
-
+                <br>
+                <p><a href="index.php" class="btn btn-primary">Back</a></p>
                 </form>
             </div>
         </div>

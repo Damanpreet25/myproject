@@ -26,22 +26,22 @@
                 <label class="col-md-3">Username</label>
                 <div class="col-md-offset-3">
                     <input type="text" name="tbuname" data-rule-required="true" data-msg-required="Enter Username" class="form-control"></div>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label class="col-md-3">Password</label>
                 <div class="col-md-offset-3">
                     <input type="password" name="tbpass" id="tbpass" data-rule-required="true" data-msg-required="Enter Password" class="form-control"></div>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label class="col-md-3">Confirm Password</label>
                 <div class="col-md-offset-3">
                     <input type="password" name="tbcpass" data-rule-equalto="#tbpass" data-msg-equalto="Password & Confirm Password not match" data-rule-required="true" data-msg-required="Enter Confirm Password" class="form-control"></div>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label class="col-md-3">Email</label>
                 <div class="col-md-offset-3">
                     <input type="text" name="tbemail" class="form-control" data-rule-email="true" data-msg-email="Invalid Email Address" data-rule-required="true" data-msg-required="Enter Email Id"></div>
-            </div>
+            </div><br>
             <div class="form-group">
                 <label class="col-md-3">Mobile</label>
                 <div class="col-md-offset-3">
@@ -67,7 +67,7 @@
             }
 
             ?>
-           
+           <p><a href="index.php" class="btn btn-primary">Back</a></p>
         </form>
     </div>
 </div>

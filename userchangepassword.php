@@ -24,20 +24,6 @@
 <div class="container">
     <div class="col-md-12">
         <form action="changepasswordaction.php" method="post" class="form-horizontal text-center">
-            <?php
-            if (isset($_REQUEST["msg"])) {
-                if ($_REQUEST["msg"] == 1) {
-                    echo "<div class='alert alert-success'><strong>Password Changed Successfully</strong></div>";
-                }
-                elseif ($_REQUEST["msg"] == 2){
-                    echo "<div class='alert alert-success'><strong>Failed :Incorrect Old Password</strong></div>";
-                }
-                else {
-
-                    echo "<div class='alert alert-success'><strong>FAILED</strong></div>";
-                }
-            }
-            ?>
             <div class="form-group">
                 <label class="col-md-3">Old Password</label>
                 <div class="col-md-offset-3"><input type="password" name="tbopass" id="tbopass"
@@ -66,7 +52,23 @@
                 <button type="reset" class="btn btn-primary btn-lg"> RESET</button>
             </div>
             </div>
+            <br>
+            <?php
+            if (isset($_REQUEST["msg"])) {
+                if ($_REQUEST["msg"] == 1) {
+                    echo "<div class='alert alert-success'><strong>Password Changed Successfully</strong></div>";
+                }
+                elseif ($_REQUEST["msg"] == 2){
+                    echo "<div class='alert alert-success'><strong>Failed :Incorrect Old Password</strong></div>";
+                }
+                else {
 
+                    echo "<div class='alert alert-success'><strong>FAILED</strong></div>";
+                }
+            }
+            ?>
+            
+            <p><a href="userhome.php" class="btn btn-primary">Back to Homepage</a></p>
 
         </form>
     </div>
